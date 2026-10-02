@@ -5,6 +5,7 @@
   </head>
   <body>
     <a-scene>
+      <!--
       <a-box side="double" repeat="3 3" src="brick.jpg" position="5 0.5 -3" rotation="0 0 0" width="2" depth="1.061" color="rgb(95,95,95)"></a-box>
       <a-box side="double" repeat="3 3" src="brick.jpg" position="4 1.5 -3" rotation="0 0 0" width="2" depth="1.085" color="rgb(100,100,100)"></a-box>
       <a-box side="double" repeat="3 3" src="brick.jpg" position="3 0.5 -3" rotation="0 0 0" width="2" depth="0.966" color="rgb(105,105,105)"></a-box>
@@ -53,8 +54,19 @@
       <a-box side="double" repeat="3 3" src="brick.jpg" position="-3 2.5 -8" rotation="0 0 0" width="2" depth="0.964" color="rgb(135,135,135)"></a-box>
       <a-box side="double" repeat="3 3" src="brick.jpg" position="-4 3.5 -8" rotation="0 0 0" width="2" depth="0.940" color="rgb(140,140,140)"></a-box>
       <a-box side="double" repeat="3 3" src="brick.jpg" position="-5 2.5 -8" rotation="0 0 0" width="2" depth="1.052" color="rgb(145,145,145)"></a-box>
+      
+      <a-sphere src="face.jpg" rotation="0 270 0" side="double" position="0, 2, 0" radius="0.5"></a-sphere>
+      -->
+      <a-cylinder position="-1.5 0.5 2.5" radius="0.5" height="0.4" rotation="0 0 90"></a-cylinder>
+      <a-cylinder position="1.5 0.5 2.5" radius="0.5" height="0.4" rotation="0 0 90"></a-cylinder>
+      <a-cylinder position="-1.5 0.5 -2.5" radius="0.5" height="0.4" rotation="0 0 90"></a-cylinder>
+      <a-cylinder position="1.5 0.5 -2.5" radius="0.5" height="0.4" rotation="0 0 90"></a-cylinder>
+      <a-box position=""></a-box>
 
-      <a-sphere src="face.jpg" side="double" position="0, 2, 0" radius="0.5"></a-sphere>
+
+
+
+
       <a-plane src="grass.jpg" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="20" height="20" color="#42f548"></a-plane>
       <a-sky src="skyyh.png"></a-sky>
     </a-scene>
