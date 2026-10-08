@@ -5,6 +5,8 @@
   </head>
   <body>
     <a-scene>
+      <!-- Wall -->
+      <a-entity>
       <!--
       <a-box side="double" repeat="3 3" src="brick.jpg" position="5 0.5 -3" rotation="0 0 0" width="2" depth="1.061" color="rgb(95,95,95)"></a-box>
       <a-box side="double" repeat="3 3" src="brick.jpg" position="4 1.5 -3" rotation="0 0 0" width="2" depth="1.085" color="rgb(100,100,100)"></a-box>
@@ -57,8 +59,20 @@
       
       <a-sphere src="face.jpg" rotation="0 270 0" side="double" position="0, 2, 0" radius="0.5"></a-sphere>
       -->
+      </a-entity>
+      
 
-      <a-box wireframe="true" width="4" height="8" depth="10">
+
+
+
+      <a-plane src="grass.jpg" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="50" height="50" color="#42f548"></a-plane>
+      <a-sky src="skyyh.png"></a-sky>
+      <a-camera position="0 2 5"></a-camera>
+    </a-scene>
+  </body>
+</html>
+<!--Truck-->
+<a-box wireframe="true" width="4" height="8" depth="10">
         <a-cylinder position="-1.5 0.6 3" radius="0.6" height="0.4" rotation="0 0 90" color="#343842"></a-cylinder>
         <a-cylinder position="1.5 0.6 3" radius="0.6" height="0.4" rotation="0 0 90" color="#343842"></a-cylinder>
         <!-- Outer Back Wheels -->
@@ -86,15 +100,5 @@
         <!-- Exhaust -->
         <a-cylinder position="1.45 2.5 0.5" radius="0.1" height="3" rotation="1 0 0" src="shiny.jpg"></a-cylinder>
         <a-cylinder position="-1.45 2.5 0.5" radius="0.1" height="3" rotation="1 0 0" src="shiny.jpg"></a-cylinder>
-      </a-box>
-
-
-
-
-
-      <a-plane src="grass.jpg" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="20" height="20" color="#42f548"></a-plane>
-      <a-sky src="skyyh.png"></a-sky>
-      <a-camera position="0 2 5"></a-camera>
-    </a-scene>
-  </body>
-</html>
+</a-box>
+      
