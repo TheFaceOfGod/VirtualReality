@@ -5,7 +5,7 @@
   </head>
   <body>
     <a-scene>
-      <!-- Wall -->
+      <!-- Brick Wall -->
       <a-entity>
       <!--
       <a-box side="double" repeat="3 3" src="brick.jpg" position="5 0.5 -3" rotation="0 0 0" width="2" depth="1.061" color="rgb(95,95,95)"></a-box>
@@ -61,11 +61,15 @@
       -->
       </a-entity>
       
+      <a-assets>
+        <img src="grass.jpg" id="grass">
+        <a-asset-item id="" src=""></a-asset-item>
+      </a-assets>
 
 
 
 
-      <a-plane src="grass.jpg" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="50" height="50" color="#42f548"></a-plane>
+      <a-plane src="#grass" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="50" height="50" color="#42f548"></a-plane>
       <a-sky src="skyyh.png"></a-sky>
       <a-camera position="0 2 5"></a-camera>
     </a-scene>
