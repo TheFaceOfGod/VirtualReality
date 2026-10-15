@@ -4,37 +4,739 @@
   </head>
   <body>
     <a-scene>
-      <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
-        <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+      <a-assets>
+        <img src="brick.png" id="brick">
+      </a-assets>
+      
+      <a-entity class="house">
+        <a-entity class="bigwall-with-door">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box color="#4a3c3c" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="yellow" position="0 1.5 0" width="0.1" height="0.1" depth="0.2"></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box color="#4a3c3c" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box color="#4a3c3c" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box color="#4a3c3c" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
         </a-entity>
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+        <a-entity class="bigwall" position="0 3 0">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#bric" position="0 0.5 0" width="1" height="1" depth="0.1"></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
         </a-entity>
-        <a-entity class="plank" position="0 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class="bigwall" position="-6.5 0 -6.5" rotation="0 90 0">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
         </a-entity>
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+        <a-entity class="bigwall" position="-6.5 3 -6.5" rotation="0 90 0">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
         </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+
+        <a-entity class="bigwall" position="6.5 0 -6.5" rotation="0 90 0">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+        <a-entity class="bigwall" position="6.5 3 -6.5" rotation="0 90 0">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+        <a-entity class="bigwall" position="0 0 -13">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+        <a-entity class="bigwall" position="0 3 -13">
+          <a-entity class="wall" position="0 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+          <a-entity class="wall" position="-4 0 0" rotation="0 0 0">
+            <a-entity class="plank" position="2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="0 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-1 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+            <a-entity class="plank" position="-2 0 0">
+              <a-box src="#brick" position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+              <a-box src="#brick" position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+        <a-entity class="roof" position="-3 3 -2.5" rotation="90 90 0">
+          <a-entity class="plank" position="2 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="1 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="0 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="-1 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="-2 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+        </a-entity>
+        <a-entity class="roof" position="0 3 -2.5" rotation="90 90 0">
+          <a-entity class="plank" position="2 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="1 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="0 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="-1 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
+          <a-entity class="plank" position="-2 0 0">
+            <a-box position="0 0.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 1.5 0" width="1" height="1" depth="0.1"  ></a-box>
+            <a-box position="0 2.5 0" width="1" height="1" depth="0.1"  ></a-box>
+          </a-entity>
         </a-entity>
       </a-entity>
       
       <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
-      <a-camera position="0 1.4 5"></a-camera>
+      <a-camera position="0 1.7 5"></a-camera>
     </a-scene>
   </body>
 </html>
