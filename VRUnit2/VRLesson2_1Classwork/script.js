@@ -25,7 +25,10 @@ window.addEventListener("DOMContentLoaded",function() {
     let dodecahedron = document.createElement("a-dodecahedron");
     scene.append(dodecahedron);
     dodecahedron.setAttribute("position", {x: RandInt(-10, 10), y: RandInt(0, 10), z: RandInt(-10, 10),});
-    
+    let R = RandInt(1,255);
+    let G = RandInt(1,255);
+    let B = RandInt(1,255);
+    dodecahedron.setAttribute("color", `rgb(${R}, ${G}, ${B})`);
   }
 
 })
