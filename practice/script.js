@@ -1,15 +1,32 @@
+let scene, box;
+
 window.addEventListener("DOMContentLoaded", function(){
     
     console.log("Hello 2");
-    let scene = document.querySelector("a-scene");
-    let box = document.createElement("a-box");
+    scene = document.querySelector("a-scene");
+    box = document.createElement("a-box");
+    box = document.querySelector("#BOX");
+    box.r = 1;
+    box.g = 1;
+    box.b = 1;
+    box.dr = 1;
+    box.dg = 1;
+    box.db = 1;
 
-    scene.append(box);
-    box.setAttribute("height", 2);
-    box.setAttribute("position", "0 3 2");
-    box.setAttribute("color", "green");
-    
+    console.log(box);
+    animation();
 })
+function animation(){
+    window.requestAnimationFrame(animation);
+    if (box.r < 0 && box.r < 255){
+        box.r += box.dr;
+    }
+    if (box.r < 256  && box.r > 0){
+        box.r -= box.dr;
+    }
+    
+    box.setAttribute("color", `rgb(${box.r}, ${box.g}, ${box.b})`)
+}
 
 function init(){
     console.log("Hello");
