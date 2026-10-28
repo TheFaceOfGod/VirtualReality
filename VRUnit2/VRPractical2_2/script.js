@@ -17,6 +17,10 @@ window.addEventListener("DOMContentLoaded",function() {
     dude.Sy = 1;
     dude.Sz = 1;
     DudeAnimation();
+
+    sun = document.querySelector("#sun");
+    sun.opacity = 0;
+    SunAnimation();
 })
 function CarAnimation(){
     window.requestAnimationFrame(CarAnimation);
@@ -30,16 +34,22 @@ function PokeballAnimation(){
     pokeball.setAttribute("rotation", `${pokeball.Rx}, 0, 0`);
 }
 
+function RocketAnimation(){
+    window.requestAnimationFrame(RocketAnimation);
+    rocket.y += 0.2;
+    rocket.setAttribute("position", `3, ${rocket.y}, -4`)
+}
+
 function DudeAnimation(){
     window.requestAnimationFrame(DudeAnimation);
-    dude.Sx += 1;
-    dude.Sy += 1;
-    dude.Sz += 1;
+    dude.Sx += 0.01;
+    dude.Sy += 0.01;
+    dude.Sz += 0.01;
     dude.setAttribute("scale", `${dude.Sx}, ${dude.Sy}, ${dude.Sz}`);
 }
 
-function PokeballAnimation(){
-    window.requestAnimationFrame(PokeballAnimation);
-    pokeball.Rx -= 3;
-    pokeball.setAttribute("rotation", `${pokeball.Rx}, 0, 0`);
+function SunAnimation(){
+    window.requestAnimationFrame(SunAnimation);
+    sun.opacity += 0.005;
+    sun.setAttribute("opacity", `${sun.opacity}`);
 }
