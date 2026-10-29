@@ -1,5 +1,9 @@
 let scene, box;
+class Tree{
+    constructor(){
 
+    }
+}
 window.addEventListener("DOMContentLoaded", function(){
     
     console.log("Hello 2");
@@ -18,12 +22,15 @@ window.addEventListener("DOMContentLoaded", function(){
 })
 function animation(){
     window.requestAnimationFrame(animation);
-    if (box.r < 0 && box.r < 255){
-        box.r += box.dr;
-    }
-    if (box.r < 256  && box.r > 0){
+    if (box.r >= 255){
+        box.r = 255;
         box.r -= box.dr;
     }
+    else if(box.r <= 0){
+        box.r = 0;
+        box.r += box.dr;
+    }
+    
     
     box.setAttribute("color", `rgb(${box.r}, ${box.g}, ${box.b})`)
 }
