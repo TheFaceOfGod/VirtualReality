@@ -11,51 +11,23 @@ window.addEventListener("DOMContentLoaded", function(){
     box = document.createElement("a-box");
     box = document.querySelector("#BOX");
     box.r = 0;
-    box.g = 1;
-    box.b = 1;
-
+    box.g = 0;
+    box.b = 0;
+    box.x = 0;
+    box.movex = 0.1;
     console.log(box);
     animation();
 })
 function animation(){
-    window.requestAnimationFrame(animation);
-    if(box.r >= 255){
-        for(n=0; n<255; n++){
-            box.r -= 1;
-        }
-    }
-    else if(box.r <= 0){
-        for(n=0; n<255; n++){
-            box.r += 1;
-        }
-    }
-    console.log(box.r);
-
-    if(box.g >= 255){
-        for(n=0; n<255; n++){
-            box.g -= 1;
-        }
-    }
-    else if(box.g <= 0){
-        for(n=0; n<255; n++){
-            box.g += 1;
-        }
-    }
-    console.log(box.g);
-
-    if(box.b >= 255){
-        for(n=0; n<255; n++){
-            box.b -= 1;
-        }
-    }
-    else if(box.b <= 0){
-        for(n=0; n<255; n++){
-            box.b += 1;
-        }
-    }
-    console.log(box.b);
-
     box.setAttribute("color", `rgb(${box.r}, ${box.g}, ${box.b})`)
+    box.setAttribute("position", `${box.x}, 0, 0)`)
+    if(box.x > 5){
+        box.x = 0;
+    }
+    else{
+        box.x += box.movex;
+    }
+    window.requestAnimationFrame(animation);
 }
 
 function init(){

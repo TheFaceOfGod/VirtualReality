@@ -3,7 +3,7 @@ class Cloud{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dx = 0.01;
+    this.dx = 1;
 
     this.obj = document.createElement("a-entity");
     let shapes = ["a-dodecahedron","a-icosahedron","a-octahedron","a-tetrahedron"];
@@ -20,5 +20,8 @@ class Cloud{
   fly(){
     this.x += this.dx
     this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z});
+    if(this.x > 30){
+      this.x = rnd(-25,25);
+    }
   }
 }
