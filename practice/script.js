@@ -8,8 +8,7 @@ window.addEventListener("DOMContentLoaded", function(){
     
     console.log("Hello 2");
     scene = document.querySelector("a-scene");
-    box = document.createElement("a-box");
-    box = document.querySelector("#BOX");
+    box = document.querySelector("#car");
     box.r = 0;
     box.g = 0;
     box.b = 0;
@@ -21,8 +20,8 @@ window.addEventListener("DOMContentLoaded", function(){
 function animation(){
     box.setAttribute("color", `rgb(${box.r}, ${box.g}, ${box.b})`)
     box.setAttribute("position", `${box.x}, 0, 0)`)
-    if(box.x > 5){
-        box.x = 0;
+    if(box.x > 20){
+        box.x = -20;
     }
     else{
         box.x += box.movex;

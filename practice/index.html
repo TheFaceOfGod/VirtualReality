@@ -60,28 +60,8 @@
       <a-sphere src="face.jpg" rotation="0 270 0" side="double" position="0, 2, 0" radius="0.5"></a-sphere>
       -->
       </a-entity>
-      
-      <a-assets>
-        <img src="grass.jpg" id="grass">
-        <!-- <a-asset-item id="car" src="lambo.glb"></a-asset-item> -->
-      </a-assets>
-      <!-- <a-gltf-model src="#car" position="0 0 0" scale="1.75 1.75 1.5"></a-gltf-model> -->
-      </a-entity>
-      <a-entity position="0 1 0">
-        <!-- <a-box id="smallhealthpack" src="smallhealth.png" side="single" transparent=true scale="0 1 1" position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 2500; easing:linear" animation__2="property: position; to: 0 1 0; dir: alternate; loop: true; dur: 1250; easing:linear"></a-box> -->
-      </a-entity>
-      <a-box id="BOX"></a-box>
-
-      <a-plane side="double" position="0 450 0" rotation="-270 0 0" width="50" height="50" src="baby.jpeg" animation="property: rotation; to: -270 360 0; loop: true; dur: 2500; easing:linear"></a-plane>
-      <a-plane src="#grass" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="50" height="50" color="#42f548"></a-plane>
-      <a-sky src="skyyh.png"></a-sky>
-      <a-camera position="0 2 5"><a-cursor color="black"></a-cursor></a-camera>
-    </a-scene>
-  </body>
-  <script src="script.js"></script>
-</html>
-<!--Truck-->
-<a-box>
+      <!--Truck-->
+<a-entity id="car" rotation="0 90 0">
         <a-cylinder position="-1.5 0.6 3" radius="0.6" height="0.4" rotation="0 0 90" color="#343842"></a-cylinder>
         <a-cylinder position="1.5 0.6 3" radius="0.6" height="0.4" rotation="0 0 90" color="#343842"></a-cylinder>
         <!-- Outer Back Wheels -->
@@ -109,5 +89,29 @@
         <!-- Exhaust -->
         <a-cylinder position="1.45 2.5 0.5" radius="0.1" height="3" rotation="1 0 0" src="shiny.jpg"></a-cylinder>
         <a-cylinder position="-1.45 2.5 0.5" radius="0.1" height="3" rotation="1 0 0" src="shiny.jpg"></a-cylinder>
-</a-box>
+</a-entity>
       
+
+
+
+
+
+      <a-assets>
+        <img src="grass.jpg" id="grass">
+        <!-- <a-asset-item id="car" src="lambo.glb"></a-asset-item> -->
+      </a-assets>
+      <!-- <a-gltf-model src="#car" position="0 0 0" scale="1.75 1.75 1.5"></a-gltf-model> -->
+      </a-entity>
+      <a-entity position="0 1 0">
+        <!-- <a-box id="smallhealthpack" src="smallhealth.png" side="single" transparent=true scale="0 1 1" position="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 2500; easing:linear" animation__2="property: position; to: 0 1 0; dir: alternate; loop: true; dur: 1250; easing:linear"></a-box> -->
+      </a-entity>
+      <a-box id="BOX"></a-box>
+
+      <a-plane side="double" position="0 450 0" rotation="-270 0 0" width="50" height="50" src="baby.jpeg" animation="property: rotation; to: -270 360 0; loop: true; dur: 2500; easing:linear"></a-plane>
+      <a-plane src="#grass" repeat="5 5" position="0, 0, -4" rotation="-90 0 0" width="50" height="50" color="#42f548"></a-plane>
+      <a-sky src="skyyh.png"></a-sky>
+      <a-camera position="0 2 5"><a-cursor color="black"></a-cursor></a-camera>
+    </a-scene>
+  </body>
+  <script src="script.js"></script>
+</html>

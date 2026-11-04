@@ -1,5 +1,5 @@
 let rnd = (l,u) => Math.floor(Math.random()*(u-l) + l);
-let scene, snowmen = [ ];
+let scene, snowmen = [];
 let clouds = [];
 let snowflakes = [];
 window.addEventListener("DOMContentLoaded",function() {
