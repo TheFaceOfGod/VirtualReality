@@ -57,7 +57,10 @@ class Rocket{
     this.dy = this.dy*1.005
     this.y += this.dy;
     this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z})
-
-    
+    if(this.y > 200){
+      this.dy = 0.2;
+      this.obj.setAttribute("rotation",{x:0, y:0, z:180});
+      this.dy = this.dy*-1;
+    }
   }
 }
