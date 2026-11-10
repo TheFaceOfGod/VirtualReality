@@ -8,18 +8,28 @@ class Rocket{
     this.obj = document.createElement("a-entity");
     
     let tip = document.createElement("a-cone");
-    tip.setAttribute("color","gray");
+    tip.setAttribute("color","#689669");
     tip.setAttribute("position","0 3 0");
     tip.setAttribute("height","2");
     tip.setAttribute("radius-bottom","1");
+    tip.setAttribute("src", "#metal")
     this.obj.append(tip);
   
     let base = document.createElement("a-cylinder");
     base.setAttribute("position","0 0 0");
-    base.setAttribute("color","gray");
+    base.setAttribute("color","#689669");
     base.setAttribute("height","4");
     base.setAttribute("radius","1");
+    base.setAttribute("src", "#metal")
     this.obj.append(base);
+
+    let symbol = document.createElement("a-cylinder");
+    symbol.setAttribute("position","0 0 0");
+    symbol.setAttribute("rotation","0 0 90");
+    symbol.setAttribute("radius", 0.5)
+    symbol.setAttribute("height", 2)
+    symbol.setAttribute("src", "#rad")
+    this.obj.append(symbol);
 
     let smoke = document.createElement("a-sphere");
     smoke.setAttribute("position","0 -2 0");
@@ -44,10 +54,10 @@ class Rocket{
   }
 
   launch(){
+    this.dy = this.dy*1.005
     this.y += this.dy;
     this.obj.setAttribute("position",{x:this.x, y:this.y, z:this.z})
-    if(this.y > 50){
-      this.y = -10;
-    }
+
+    
   }
 }
