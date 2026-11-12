@@ -1,3 +1,4 @@
+let bot;
 class UFO{
   constructor(x,y,z){
     this.x = x;
