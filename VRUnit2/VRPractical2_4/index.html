@@ -6,7 +6,7 @@
     <script src="UFO.js"></script>
   </head>
   <body>
-      <a-scene>
+      <a-scene stats>
         <a-assets>
         <img src="brick.png" id="brick">
         <img src="road.jpg" id="road">
@@ -6311,7 +6311,7 @@
         
       
       <!-- Camera is added so that you do not "spawn" at the origin -->
-      <a-camera position="0 1.7 5"></a-camera>
+      <a-camera wasd-controls="acceleration: 100; fly: true" position=" 0 1.7 5"></a-camera>
     </a-scene>
   </body>
 </html>
