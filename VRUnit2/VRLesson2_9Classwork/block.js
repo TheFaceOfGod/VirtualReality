@@ -8,6 +8,5 @@ class Block{
     this.obj.setAttribute("color","gray");
     this.obj.setAttribute("position",{x:x,y:y,z:z});
     scene.append(this.obj);
-
   }
 }
