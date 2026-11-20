@@ -3,24 +3,25 @@ class MovingWall{
     this.x = x;
     this.y = y;
     this.z = z;
-    this.dy = 0.1;
+    this.dy = 0.01;
     this.obj = document.createElement("a-box");
     this.obj.setAttribute("color","white");
     let guesser = rnd(1,100);
     if(guesser > 50){
-      this.obj.setAttribute("position",{x:x,y:1,z:z});
+      this.y = 0.9;
     }
     else if(guesser <= 50){
-      this.obj.setAttribute("position",{x:x,y:0,z:z});
+      this.y = -1;
     }
+    this.obj.setAttribute("position",{x:x,y:this.y,z:z});
     scene.append(this.obj);
   }
   slide(){
-    if(this.y >= 1){
-      this.y -= this.dy;
+    console.log(this.y);
+    this.y += this.dy;
+    if(this.y >= 1 || this.y <= -1){
+      this.dy = -this.dy;
     }
-    else if(this.y <= 0){
-      this.y += this.dy;
-    }
+    this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
   }
 }
