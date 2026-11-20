@@ -69,9 +69,17 @@ window.addEventListener("DOMContentLoaded",function() {
         new SpikeTrap(c,0.5,r);
       }
       else if(cols[c] == "z"){
-        let wall = new MovingWall(c,r);
+        let wall = new MovingWall(c,0,r);
         distracting.push(wall);
       }
     }
   }
+  loop();
 })
+function loop(){
+  for(let i = 0; i < distracting.length; i++){
+    let d = distracting[i];
+    d.slide();
+  }
+  window.requestAnimationFrame(loop);
+}
