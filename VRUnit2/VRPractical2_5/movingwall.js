@@ -30,7 +30,7 @@ class MovingWall{
     let yesmove = 1;
     let check = rnd(1,10)
     if(check == yesmove){
-      slide();
+      this.slide();
     }
     else{
       setTimeout(this.movecheck, 5000)      
