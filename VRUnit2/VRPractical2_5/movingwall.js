@@ -21,11 +21,19 @@ class MovingWall{
     this.y += this.dy;
     if(this.y >= 1 || this.y <= -1){
       this.dy = -this.dy;
+      this.movecheck();
     }
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
 
   }
   movecheck(){
-    let yesmove = 
+    let yesmove = 1;
+    let check = rnd(1,10)
+    if(check == yesmove){
+      slide();
+    }
+    else{
+      setTimeout(this.movecheck, 5000)      
+    }
   }
 }
