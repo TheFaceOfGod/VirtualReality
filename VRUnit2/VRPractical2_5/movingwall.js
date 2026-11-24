@@ -23,5 +23,9 @@ class MovingWall{
       this.dy = -this.dy;
     }
     this.obj.setAttribute("position",{x:this.x,y:this.y,z:this.z});
+
+  }
+  movecheck(){
+    let yesmove = 
   }
 }

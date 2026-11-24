@@ -36,9 +36,9 @@ let maze = [
   "x---xx--z--x-----x-------x---x",
   "x-x--xx-xxxx-xxxzxx-xxxxxx-zzx",
   "xzxx--x----xxx-x--x---x------x",
-  "x----xx-xxxx-x-x--xxx-x-xxzxxx",
+  "x----xx-xxxx-x-xx-xxx-x-xxzxxx",
   "x-xx-x--x--x-x--x---x--------x",
-  "x--xxx-xx-xx-x-xxzx-xxxxxx-x-x",
+  "x--xxx-xx-xx-z-xxzx-xxxxxx-x-x",
   "x--z----x----x----x---x----x-x",
   "xxxxxxxxxxxxxxxxxxxxxxxxxxxx-x",
 ];
